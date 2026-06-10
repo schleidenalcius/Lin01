@@ -6,6 +6,12 @@
 </head>
 <body>
     <!--Ceci est un commentaire-->
+    <nav>
+        <a href="#list">Liste</a>
+        <a href="#king">Paragraphe vert</a>
+        <a href="#formulaire">Formulaire</a>
+       
+    </nav>
     <h1>Schleiden Alcius</h1>
     <h2>Présentement, je suis la formation de Cybercap et je suis content</h2>
     <p>J'ai commencé la formation initiative avenir chez cybercap le 27 avril 2026. J'ai hésité pendant quelques jours <br>
@@ -19,9 +25,8 @@
             <li>Musique</li>
     </ul>
     </div>
-    <img style="width: 200px; height: 200px;" alt="Image de planètes" src="cosmos.jpg"><br>
-    <a href="https://www.google.com" target="_blank">Lien vers google.com</a>
-    <!--Ceci est un commentaire
+    <hr>
+    
     <p id="king">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat quis neque vel hendrerit. 
     Sed justo sapien, rutrum suscipit pellentesque et, feugiat a quam. Phasellus a porttitor eros. Vivamus et nulla 
     finibus ante pulvinar placerat quis non eros. Suspendisse id sagittis dolor. In sapien massa, congue sodales nisi vitae,
@@ -56,6 +61,42 @@
         quis volutpat arcu congue at. Quisque gravida magna eget massa mollis tincidunt. Etiam commodo pulvinar purus nec
         volutpat. Duis convallis purus et iaculis porttitor. Nulla sollicitudin elementum ullamcorper.</p>
     <img style="width: 200px; height: 200px;" src="philosophe.jpg">
-    -->
+    
+    <hr>
+
+    <h2 id="formulaire">Formulaire de l'espace</h2>
+    <img style="width: 200px; height: 200px;" alt="Image de planètes" src="cosmos.jpg"><br>
+    <a href="https://www.google.com" target="_blank">Lien vers google.com</a>
+    
+    <form action="#" method="get">
+    <div class="serrer">   
+    <label for="prenom">Ton prénom :</label>
+    <input type="text" id="prenom" name="prenom" placeholder="mon prénom"><br>
+    <label for="email">Ton adresse email :</label>
+    <input type="email" id="email" name="email" placeholder="mon adresse email"><br>
+    <label for="couleurs">Ta couleur préférée :</label>
+    <select id="couleurs" name="couleurs">
+        <option>Choisir une couleur</option>
+        <option value="rouge">Rouge</option>
+        <option value="bleu">Bleu</option>
+        <option value="vert">Vert</option>
+        <option value="jaune">Jaune</option>
+    </select><br>
+    <fieldset>
+        <legend for="animal">Ton animal préféré </legend>
+        <label for="animal">chien</label>
+        <input type="radio" id="chien" name="animal" value="chien" >
+        <label for="animal">chat</label>
+        <input type="radio" id="chat" name="animal" value="chat" >
+        <label for="animal">hamster</label>
+        <input type="radio" id="hamster" name="animal" value="hamster">
+    </fieldset>
+    <label for="planete">Vers quelle planète aimerais-tu voyager ?</label>
+    <textarea id="planete" name="planete" placeholder="ma planète préférée"></textarea><br>
+  <button type="submit">Envoyer</button>
+  <button type="reset">Effacer</button>
+    </div>
+    </form>
+   
 </body>
 </html>

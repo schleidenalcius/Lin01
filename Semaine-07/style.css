@@ -1,12 +1,21 @@
-
+body {
+    background-color: #a8ddec;
+}
 h1, h2{
     font-size: 22px;
     text-align: center;
 }
 p {
     text-align: center;
+    
 }
-
+nav {
+    text-align: center;
+    margin: 10px;
+}
+#formulaire {
+    text-align: left;
+}
 #list {
     text-align: center;
     font-size: 18px;
@@ -14,6 +23,12 @@ p {
 #list ul{
    display: inline-block;
    text-align: left;
+}
+.serrer{
+   
+    display: grid;
+    width: 20%;
+    
 }
 img {
     border-radius: 15px 15px 15px 15px;
