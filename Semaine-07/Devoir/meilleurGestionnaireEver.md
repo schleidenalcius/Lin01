@@ -2,10 +2,13 @@
 
 ## GateKeeper Enterprise 5:30
 
-3,00$us/mois
+Tarif : 3,00$us/mois.
+
 La solution permet aux entreprises d'automatiquement verrouiller les appareils laissés sans surveillance des employés, de stocker les mots de passe de manière sécurisée et de fournir plusieurs options de connexion en fonction des préférences de l'utilisateur.
+
 Déploiement sur le nuage, sur site
-clients typiques:
+
+Clients typiques:
 Travailleurs autonomes
 Petites entreprises
 Moyennes entreprises 
@@ -44,10 +47,11 @@ Grandes entreprises 500 employés minimum
 Pour une entreprise qui fait usage de keeper security, il arrive que le gestionnaire de mot de passe confond deux employés et donne à l'un les mot de passe de l'autre.
 
 ## Bitwarden 4,7:215
-4,00$ US/mois
-déployer dans des environnements cloud et sur site
-chaque compte commence par la création d'un coffre fort personnel crypté de bout en bout qui permet à l'utilisateur de stocker ses propres informations d'identification personnelles
-disponible dans près de 40 langues
+
+Tarif : ,00$ US/mois
+Sur le cloud et le site
+Chaque compte commence par la création d'un coffre fort personnel crypté de bout en bout qui permet à l'utilisateur de stocker ses propres informations d'identification personnelles.
+Disponible dans près de 40 langues
 Pas d'option gratuite 
 Version d'essai gratuite
 abonnement
