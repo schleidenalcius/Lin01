@@ -1,0 +1,22 @@
+body {
+    background-color: #fff3b0;
+}
+
+.menu {
+text-align: center;
+}
+/*
+335c67: vert bleuté
+fff3b0: jaune pâle
+e09f3e: beige doré
+9e2a2b: rouge bourgogne
+540b0e: rouge très foncé
+*/
+h1, h2, h3, a , p{
+    color: #540b0e;
+}
+a {  
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px; 
+}
