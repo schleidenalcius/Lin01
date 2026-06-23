@@ -1,8 +1,64 @@
-body {
+body{
+    padding: 0;
+    margin: 0;
+}
+.ghibliB{
+   background: #335C67;
+    background: linear-gradient(90deg, rgba(51, 92, 103, 1) 0%, rgba(130, 182, 191, 1) 54%, rgba(183, 235, 235, 1) 100%);
+}
+.cthulhuB{
     background: #335C67;
     background: linear-gradient(90deg, rgba(51, 92, 103, 1) 0%, rgba(130, 182, 191, 1) 54%, rgba(183, 235, 235, 1) 100%);
 }
-
+.samouraiB{
+    background-image: url(ArrierePlanSamu.png) ;
+    background-position: center;
+    background-size: 30em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.introduction, .quotidien, .sources, .influence, .films-iconiques, .impact{
+    text-align: left; 
+    border-radius: 0 20px 20px 0 ;
+    background-color: #540b0e; 
+    padding: 10px;
+    width:500px;
+ }
+ .bushido, .evolution, .horreur-cosmique, .themes, .personnages{
+    text-align: right;
+    background-color: #540b0e;
+    padding: 10px;
+    margin-left: 55%;
+    border-radius: 20px 0 0 20px ;
+ }
+ 
+ .bushido ul, .horreur-cosmique ul, .themes ul{
+    display: inline-block;
+    padding: 10px;  
+    text-align: left; 
+ }
+ .frise-chronologique, .ressources{
+    text-align: center;
+    background-color: #540b0e;
+    padding: 10px;
+    width: 50%;
+    margin-left:30%;
+    margin-top: 20px;
+    border-radius: 20px ;
+ }
+ .ghibli{
+    margin: 5%;
+    margin-left:25%
+ }
+ .frise-chronologique ol{
+    display: inline-block;
+    padding: 10px;  
+    text-align: left; 
+ }
+ #cthulhu {
+    margin-left: 10%;
+    width: 80%
+ }
 /*
 335c67: vert bleuté
 fff3b0: jaune pâle
@@ -13,9 +69,7 @@ e09f3e: beige doré
 h1, h2, h3, a , p, li{
     color: #e09f3e;
 }
-p:hover, a:hover, li:hover{
-    color:#22424b
-}
+
 h1 {
     font-size: 32;
 }
