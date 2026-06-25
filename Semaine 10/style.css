@@ -1,0 +1,63 @@
+:root {
+  /* COULEURS PRINCIPALES */
+  --couleur-texte:        #3D2B1F;
+  --couleur-accent:       #C4622D;
+  --couleur-secondaire:   #2E5E4E;
+  --couleur-fond:         #F5F0E8;
+  --couleur-blanc:        #FFFFFF;
+
+  /* COULEURS DE SUPPORT */
+  --couleur-fond-alt:     #F2E8DC;
+  --couleur-texte-doux:   #7A4A2E;
+  --couleur-bordure:      #E8D5C4;
+  --couleur-sombre:       #1A1A18;
+
+  /* TYPOGRAPHIES */
+  --typo-titre:   'Audiowide', serif;
+  --typo-corps:   'Michroma', sans-serif;
+}
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.entete {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+body{
+  text-align: center;
+  background-color: var(--couleur-fond); 
+}
+h1, h2, h3, p{
+  color: var(--couleur-texte);
+}
+h1{
+  font-size: 38px;
+  font-family: var(--typo-titre);
+}
+p{
+  font-size: 22px;
+  font-family: var(--typo-corps);
+}
+h2{
+  font-family: var(--typo-titre);
+  font-size: 30px;
+}
+h3{
+  font-family: var(--typo-titre);
+  font-size: 27px;
+}
+a{
+  text-decoration: none;
+}
