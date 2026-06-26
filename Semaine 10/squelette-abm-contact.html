@@ -5,20 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nous joindre | Atelier Boréal Médias</title>
 
-  <!-- TYPOGRAPHIES : même lien que dans index.html -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="LIEN-GOOGLE-FONTS-ICI" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Playwrite+AU+VIC+Guides&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Michroma&family=Playwrite+AU+VIC+Guides&display=swap" rel="stylesheet">
 
   <!-- MÊME FEUILLE DE STYLE que index.html -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-  <!-- ============================================================
-    HEADER : identique à index.html
-    Copier-coller le même bloc <header> que dans index.html
-  ============================================================ -->
+    <header class="entete">
+    <a href="index.html">
+      <img src="images/abm-logo.png" alt="Logo Atelier Boréal Médias" width="150px">
+    </a>
+    <nav class="navigation">
+      <a href="squelette-abm-vitrine.html">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#equipe">Équipe</a>
+      <a href="#apropos">À propos</a>
+      <a href="squelette-abm-contact.html">Contact</a>
+    </nav>
   </header>
 
 
@@ -37,15 +43,42 @@
       <!-- Devrait contenir une capture de:
               Nom complet, Adresse courriel, Message, et un bouton d'envoi
            Le formulaire n'a pas à fonctionner. Nous n'avons pas encore vu ces notions. Mais il doit être construit correctement selon ce que nous avons vu.-->
-    </form>
+    <label for="nom">Veuillez rentrer votre nom complet:</label>
+    <input type="text" id="nom" name="nom" placeholder="Inscrivez votre nom"><br>
+    <label for="courriel">Rentrez votre courriel s'il vous plaît:</label>
+    <input type="email" id="couriel" name="couriel" placeholder="votre@courriel.com"><br>
+    <div class="message-a-rentrer">
+    <label for="message">Laissez nous votre message</label><br>
+    <textarea id="message" name="message" rows="7"></textarea>
+    </div>
+    <button type="submit">Envoyer</button>
+  </form>
 
   </main>
 
-  <footer>
-  <!-- ============================================================
-    FOOTER : identique à index.html
-    Copier-coller le même bloc <footer> que dans index.html
-  ============================================================ -->
+ <footer>
+    <div class="footer-contenu">
+
+      <div class="footer-logo">
+        <img src="images/abm-logo.png" alt="Logo Atelier Boréal Médias" width="150px">
+      </div>
+
+      <nav class="footer-nav">
+          <a href="squelette-abm-vitrine.html">Accueil</a>
+          <a href="#services">Services</a>
+          <a href="#equipe">Équipe</a>
+          <a href="#apropos">À propos</a>
+          <a href="squelette-abm-contact.html">Contact</a>     
+      </nav>
+
+      <address>
+        Atelier Boréal Médias Inc.<br>
+        1751, rue Richardson, bureau 3.105<br>
+        Montréal (Québec) H3K 1G6<br>
+        <a href="mailto:info@boreal-medias.ca">info@boreal-medias.ca</a>
+      </address>
+
+    </div>
   </footer>
 
 </body>

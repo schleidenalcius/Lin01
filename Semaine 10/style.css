@@ -21,16 +21,38 @@
   font-weight: 400;
   font-style: normal;
 }
+.hero{
+  background: url(images/photo-paysage-boreal.jpg);
+  display: flex;
+  height: 800px;
+  background-size: cover;
+  justify-content: center;
+
+}
+.hero-contenu{
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  padding-bottom: 50px;
+}
 .michroma-regular {
   font-family: "Michroma", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
+#nom, #couriel{
+  margin-bottom: 50px;
+ min-width: 600px;
+}
+.message-a-rentrer{
+  display: flex;
+  justify-content: center;
+}
 .entete {
   display: flex;
   justify-content: space-between;
 }
+
 .navigation {
   display: flex;
   gap: 20px;
@@ -46,7 +68,7 @@ h1{
   font-size: 38px;
   font-family: var(--typo-titre);
 }
-p{
+p, label{
   font-size: 22px;
   font-family: var(--typo-corps);
 }
@@ -60,4 +82,38 @@ h3{
 }
 a{
   text-decoration: none;
+}
+.grille-equipe{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.sophie{
+  grid-column:1;
+  grid-row: 1
+}
+.marc{
+   grid-column: 1;
+  grid-row: 2;
+}
+.carlos{
+  grid-column: 2;
+  grid-row: 2;
+}
+.yara{
+  grid-column: 2;
+  grid-row: 1;
+}
+.footer-nav{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.footer-contenu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 400px;
+}
+button{
+  width: 200px;
 }
