@@ -5,57 +5,16 @@
   --couleur-secondaire:   #2E5E4E;
   --couleur-fond:         #F5F0E8;
   --couleur-blanc:        #FFFFFF;
-
+  
   /* COULEURS DE SUPPORT */
   --couleur-fond-alt:     #F2E8DC;
   --couleur-texte-doux:   #7A4A2E;
   --couleur-bordure:      #E8D5C4;
   --couleur-sombre:       #1A1A18;
-
+  
   /* TYPOGRAPHIES */
   --typo-titre:   'Audiowide', serif;
   --typo-corps:   'Michroma', sans-serif;
-}
-.audiowide-regular {
-  font-family: "Audiowide", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.hero{
-  background: url(images/photo-paysage-boreal.jpg);
-  display: flex;
-  height: 800px;
-  background-size: cover;
-  justify-content: center;
-
-}
-.hero-contenu{
-  text-align: center;
-  width: fit-content;
-  height: fit-content;
-  padding-bottom: 50px;
-}
-.michroma-regular {
-  font-family: "Michroma", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-#nom, #couriel{
-  margin-bottom: 50px;
- min-width: 600px;
-}
-.message-a-rentrer{
-  display: flex;
-  justify-content: center;
-}
-.entete {
-  display: flex;
-  justify-content: space-between;
-}
-
-.navigation {
-  display: flex;
-  gap: 20px;
 }
 body{
   text-align: center;
@@ -83,17 +42,96 @@ h3{
 a{
   text-decoration: none;
 }
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hero{
+  background: url(images/photo-paysage-boreal.jpg);
+  display: flex;
+  height: 700px;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+
+}
+.grille-services{
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  size: 600px 300px;
+}
+.grille-services img{
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width:100%;
+  
+}
+.carte-membre{
+  display: flex;
+}
+.carte-membre img{
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 60%;
+}
+.apropos-contenu{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.hero-contenu h1, .hero-contenu p{
+  color:#F2E8DC;
+  background-color: #C4622D;
+
+}
+.hero-contenu p{
+  color:#F2E8DC;
+}
+.hero-contenu{
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  padding-bottom: 50px;
+ 
+}
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#nom, #couriel{
+  margin-bottom: 50px;
+ min-width: 600px;
+}
+.message-a-rentrer{
+  display: flex;
+  justify-content: center;
+}
+.entete {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}
 .grille-equipe{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 20px;
 }
 .sophie{
   grid-column:1;
   grid-row: 1
 }
 .marc{
-   grid-column: 1;
+  grid-column: 1;
   grid-row: 2;
 }
 .carlos{
@@ -115,5 +153,16 @@ a{
   margin-top: 400px;
 }
 button{
+  margin-top: 30px;
   width: 200px;
+}
+input{
+  border-radius: 20px;
+  width: 600px;
+  height: 50px
+}
+textarea{
+  border-radius: 10px 20px;
+  width: 600px;
+  height: 100px
 }
