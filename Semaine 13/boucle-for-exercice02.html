@@ -1,0 +1,22 @@
+<body>
+  <script>/*
+    let notes = [80, 70, 90];
+    let total = 0;
+    notes.forEach(note =>{
+      total+=note;
+    });
+    console.log(`La moyenne des notes suivantes: [${notes[0]}, ${notes[1]}, ${notes[2]}] est de : `+(total/notes.length));*/
+    // Calculer la moyenne des notes
+    // afficher la moyenne
+    let scores = [12, 8, 17, 5, 20];
+    let compteur = 0;
+    let scorePlusGrandQue10 = 0;
+    scores.forEach(score =>{
+      if (score >= 10) {
+        scorePlusGrandQue10++;
+        console.log("Ce nombre est plus grand que 10 : "+score);
+      }
+    });
+     console.log("Au total il y a "+scorePlusGrandQue10+" nombres plus grand que 10");
+  </script>
+</body>

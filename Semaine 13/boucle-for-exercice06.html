@@ -1,0 +1,278 @@
+<body>
+    <div 
+        id="boite"
+        style="background-color: rgb(230, 120, 38); width: 100px; height: 100px; margin-bottom: 20px;"
+        >Couleur 1
+    </div>
+    <div 
+        id="boite2"
+        style="background-color: rgb(230, 120, 38); width: 100px; height: 100px; margin-bottom: 20px"
+        >Couleur 2
+    </div>
+    <div 
+        id="boite3"
+        style="background-color: rgb(230, 120, 38); width: 100px; height: 100px"
+        >Moyenne <br>1 et 2
+    </div>
+
+    <br>
+
+    <button id="monBouton">Changer la couleur</button>
+
+    <script>
+        let Caracteres = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "a", "b", "c", "d", "e", "f"];
+        let boite= document.querySelector("#boite");
+        let nombreAleatoires=0;
+        
+        let leBouton = document.querySelector("button").addEventListener("click", ()=>{
+            let couleurAleatoire="#";
+            for (let i=0; i<6;i++){
+                nombreAleatoires=(Math.floor(Math.random() * Caracteres.length));
+                couleurAleatoire=couleurAleatoire+Caracteres[nombreAleatoires];
+            }
+            let mesCouleurs=[];
+            document.querySelector("#boite").style.backgroundColor =couleurAleatoire;
+            mesCouleurs.push(couleurAleatoire);
+            couleurAleatoire="#";
+             for (let i=0; i<6;i++){
+                nombreAleatoires=(Math.floor(Math.random() * Caracteres.length));
+                couleurAleatoire=couleurAleatoire+Caracteres[nombreAleatoires];
+            }
+            document.querySelector("#boite2").style.backgroundColor =couleurAleatoire;
+            mesCouleurs.push(couleurAleatoire);
+            
+            let monRouge=0;
+            let monBleue=0;
+            let monVert=0;
+         
+            for(let j=1; j<4;j++){
+                let somme=0;
+                if(j==1){
+                   let posValeurCoul1_1 = mesCouleurs[0].charAt(j)
+                   let posValeurCoul1_2 = mesCouleurs[0].charAt(j+1)
+                   let posValeurCoul2_1 = mesCouleurs[1].charAt(j)
+                   let posValeurCoul2_2 = mesCouleurs[1].charAt(j+1)
+                
+
+
+                    if(posValeurCoul1_1 =="a"){
+                        somme=somme +10*16;
+                    }else if(posValeurCoul1_1 =="b"){
+                        somme=somme +11*16;
+                    }else if(posValeurCoul1_1 =="c"){
+                        somme=somme +12*16;
+                    }else if(posValeurCoul1_1 =="d"){
+                        somme=somme +13*16;
+                    }else if(posValeurCoul1_1 =="e"){
+                        somme=somme +14*16;
+                    }else if(posValeurCoul1_1 =="f"){
+                        somme=somme +15*16;
+                    }else{
+                        let unChiffre = parseInt(posValeurCoul1_1);
+                        somme=somme+unChiffre*16;
+                    }
+                     if(posValeurCoul1_2 =="a"){
+                        somme=somme +10*16;
+                    }else if(posValeurCoul1_2 =="b"){
+                        somme=somme +11*16;
+                    }else if(posValeurCoul1_2 =="c"){
+                        somme=somme +12*16;
+                    }else if(posValeurCoul1_2 =="d"){
+                        somme=somme +13*16;
+                    }else if(posValeurCoul1_2 =="e"){
+                        somme=somme +14*16;
+                    }else if(posValeurCoul1_2 =="f"){
+                        somme=somme +15*16;
+                    }else{
+                        let unChiffre=parseInt(posValeurCoul1_2);
+                        somme=somme+unChiffre*16;
+                    }
+
+                      if(posValeurCoul2_1 =="a"){
+                        somme=somme +10*16;
+                    }else if(posValeurCoul2_1 =="b"){
+                        somme=somme +11*16;
+                    }else if(posValeurCoul2_1 =="c"){
+                        somme=somme +12*16;
+                    }else if(posValeurCoul2_1 =="d"){
+                        somme=somme +13*16;
+                    }else if(posValeurCoul2_1 =="e"){
+                        somme=somme +14*16;
+                    }else if(posValeurCoul2_1 =="f"){
+                        somme=somme +15*16;
+                    }else{
+                        let unChiffre=parseInt(posValeurCoul2_1);
+                        somme=somme+unChiffre*16;
+                    }
+                     if(posValeurCoul2_2 =="a"){
+                        somme=somme +10*16;
+                    }else if(posValeurCoul2_2 =="b"){
+                        somme=somme +11*16;
+                    }else if(posValeurCoul2_2 =="c"){
+                        somme=somme +12*16;
+                    }else if(posValeurCoul2_2 =="d"){
+                        somme=somme +13*16;
+                    }else if(posValeurCoul2_2 =="e"){
+                        somme=somme +14*16;
+                    }else if(posValeurCoul2_2 =="f"){
+                        somme=somme +15*16;
+                    }else{
+                        let unChiffre=parseInt(posValeurCoul2_2);
+                        somme=somme+unChiffre*16;
+                    }
+                 
+                    monRouge=Math.floor(somme/2);
+                }else if (j==2){
+                    let posValeurCoul1_1 = mesCouleurs[0].charAt(j)
+                    let posValeurCoul1_2 = mesCouleurs[0].charAt(j+1)
+                    let posValeurCoul2_1 = mesCouleurs[1].charAt(j)
+                    let posValeurCoul2_2 = mesCouleurs[1].charAt(j+1)
+                    if(posValeurCoul1_1 =="a"){
+                        somme=somme +10*16;
+                    }else if(posValeurCoul1_1 =="b"){
+                        somme=somme +11*16;
+                    }else if(posValeurCoul1_1 =="c"){
+                        somme=somme +12*16;
+                    }else if(posValeurCoul1_1 =="d"){
+                        somme=somme +13*16;
+                    }else if(posValeurCoul1_1 =="e"){
+                        somme=somme +14*16;
+                    }else if(posValeurCoul1_1 =="f"){
+                        somme=somme +15*16;
+                    }else{
+                        let unChiffre=parseInt(posValeurCoul1_1);
+                        somme=somme+unChiffre*16;
+                    }
+                     if(posValeurCoul1_2 =="a"){
+                        somme=somme +10*16;
+                    }else if(posValeurCoul1_2 =="b"){
+                        somme=somme +11*16;
+                    }else if(posValeurCoul1_2 =="c"){
+                        somme=somme +12*16;
+                    }else if(posValeurCoul1_2 =="d"){
+                        somme=somme +13*16;
+                    }else if(posValeurCoul1_2 =="e"){
+                        somme=somme +14*16;
+                    }else if(posValeurCoul1_2 =="f"){
+                        somme=somme +15*16;
+                    }else{
+                        let unChiffre=parseInt(posValeurCoul1_2);
+                        somme=somme+unChiffre*16;
+                    }
+
+                      if(posValeurCoul2_1 =="a"){
+                        somme=somme +10*16;
+                    }else if(posValeurCoul2_1 =="b"){
+                        somme=somme +11*16;
+                    }else if(posValeurCoul2_1 =="c"){
+                        somme=somme +12*16;
+                    }else if(posValeurCoul2_1 =="d"){
+                        somme=somme +13*16;
+                    }else if(posValeurCoul2_1 =="e"){
+                        somme=somme +14*16;
+                    }else if(posValeurCoul2_1 =="f"){
+                        somme=somme +15*16;
+                    }else{
+                        let unChiffre=parseInt(posValeurCoul2_1);
+                        somme=somme+unChiffre*16;
+                    }
+                     if(posValeurCoul2_2 =="a"){
+                        somme=somme +10*16;
+                    }else if(posValeurCoul2_2 =="b"){
+                        somme=somme +11*16;
+                    }else if(posValeurCoul2_2 =="c"){
+                        somme=somme +12*16;
+                    }else if(posValeurCoul2_2 =="d"){
+                        somme=somme +13*16;
+                    }else if(posValeurCoul2_2 =="e"){
+                        somme=somme +14*16;
+                    }else if(posValeurCoul2_2 =="f"){
+                        somme=somme +15*16;
+                    }else{
+                        let unChiffre=parseInt(posValeurCoul2_2);
+                        somme=somme+unChiffre*16;
+                    }
+                    monBleue=Math.floor(somme/2);
+                }else if (j==3){
+                    let posValeurCoul1_1 = mesCouleurs[0].charAt(j)
+                    let posValeurCoul1_2 = mesCouleurs[0].charAt(j+1)
+                    let posValeurCoul2_1 = mesCouleurs[1].charAt(j)
+                    let posValeurCoul2_2 = mesCouleurs[1].charAt(j+1)
+                    if(posValeurCoul1_1 =="a"){
+                        somme=somme +10*16;
+                    }else if(posValeurCoul1_1 =="b"){
+                        somme=somme +11*16;
+                    }else if(posValeurCoul1_1 =="c"){
+                        somme=somme +12*16;
+                    }else if(posValeurCoul1_1 =="d"){
+                        somme=somme +13*16;
+                    }else if(posValeurCoul1_1 =="e"){
+                        somme=somme +14*16;
+                    }else if(posValeurCoul1_1 =="f"){
+                        somme=somme +15*16;
+                    }else{
+                        let unChiffre=parseInt(posValeurCoul1_1);
+                        somme=somme+unChiffre*16;
+                    }
+                     if(posValeurCoul1_2 =="a"){
+                        somme=somme +10*16;
+                    }else if(posValeurCoul1_2 =="b"){
+                        somme=somme +11*16;
+                    }else if(posValeurCoul1_2 =="c"){
+                        somme=somme +12*16;
+                    }else if(posValeurCoul1_2 =="d"){
+                        somme=somme +13*16;
+                    }else if(posValeurCoul1_2 =="e"){
+                        somme=somme +14*16;
+                    }else if(posValeurCoul1_2 =="f"){
+                        somme=somme +15*16;
+                    }else{
+                        let unChiffre=parseInt(posValeurCoul1_2);
+                        somme=somme+unChiffre*16;
+                    }
+
+                      if(posValeurCoul2_1 =="a"){
+                        somme=somme +10*16;
+                    }else if(posValeurCoul2_1 =="b"){
+                        somme=somme +11*16;
+                    }else if(posValeurCoul2_1 =="c"){
+                        somme=somme +12*16;
+                    }else if(posValeurCoul2_1 =="d"){
+                        somme=somme +13*16;
+                    }else if(posValeurCoul2_1 =="e"){
+                        somme=somme +14*16;
+                    }else if(posValeurCoul2_1 =="f"){
+                        somme=somme +15*16;
+                    }else{
+                        let unChiffre=parseInt(posValeurCoul2_1);
+                        somme=somme+unChiffre*16;
+                    }
+                     if(posValeurCoul2_2 =="a"){
+                        somme=somme +10*16;
+                    }else if(posValeurCoul2_2 =="b"){
+                        somme=somme +11*16;
+                    }else if(posValeurCoul2_2 =="c"){
+                        somme=somme +12*16;
+                    }else if(posValeurCoul2_2 =="d"){
+                        somme=somme +13*16;
+                    }else if(posValeurCoul2_2 =="e"){
+                        somme=somme +14*16;
+                    }else if(posValeurCoul2_2 =="f"){
+                        somme=somme +15*16;
+                    }else{
+                        let unChiffre=parseInt(posValeurCoul2_2);
+                        somme=somme+unChiffre*16;
+                    }
+                    monVert=Math.floor(somme/2);
+                }
+            }
+            document.querySelector("#boite3").style.backgroundColor = `rgb(${monRouge},${monBleue},${monVert})`;
+        });
+        /*
+        vous devez changer la couleur de la boite.
+        En cliquant sur le bouton, JS doit parcourir
+        le tableau de façon aléatoire et choisir 6 caractères
+        afin de construire un code de couleur "hex".
+        */
+    </script>
+</body>

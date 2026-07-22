@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Résultat du Dé</h1>
+    <button onclick="
+        let nombre = Math.random();
+        let de = nombre*6;
+        let element = document.querySelector('h1');
+        if (de >0 && de <=1){
+            element.innerHTML= 'Résultat du Dé: 1';
+        } 
+        if (de >1 && de <=2){
+            element.innerHTML= 'Résultat du Dé: 2';
+        } 
+        if (de >2 && de <=3){
+            element.innerHTML= 'Résultat du Dé: 3';
+        } 
+        if (de >3 && de <=4){
+            element.innerHTML= 'Résultat du Dé: 4';
+        } 
+        if (de >4 && de <=5){
+            element.innerHTML= 'Résultat du Dé: 5';
+        } 
+        if (de >5 && de <=6){
+            element.innerHTML= 'Résultat du Dé: 6';
+        } 
+    ">Lancer le Dé</button>
+    <script>
+/*      let monZoo = "Mon petit Zoo";
+        const minmumRequis = 25;
+        let Animaux=["Chien", "Loup", "Chat", "Lion", "Canard", "Phoque", "Tortue", "Oie", "Renard", "Guépard", "Serval", "Guépard-Royale", "Lynx", "Chacal", "Tigre", "Fennec", "Herisson", "Ours", "Aigle", "Faucon", "Gorille", "Éléphant", "Kangouru", "Ours polaire", "Panda", "Orignal"];
+        if (minmumRequis >= Animaux.length){
+            console.log("Vous n'avez pas assez d'animaux pour ouvrir cette semaine");
+        }else{
+            console.log("On est ouvert!");
+        }
+        console.log("Vous avez "+ Animaux.length+" annimaux en inventaire."); */
+/*        let age = 16;
+        let majeur = 18;
+        let aCarteIdentite = true;
+        if (age>=majeur && aCarteIdentite){
+            console.log("Entrée autorisée");
+        }else if(age <majeur){
+            console.log("Entrée refusée");
+            console.log("Trop jeune");
+        }else if (!aCarteIdentite){
+            console.log("Entrée refusée");
+            console.log("Pas de carte");
+        }
+*/
+
+        </script>
+</body>
+</html>

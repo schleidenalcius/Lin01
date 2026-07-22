@@ -1,0 +1,30 @@
+<body>
+  <h1 id="tableau">J'ai ce tableau : </h1>
+  <button id="hasard">Choisir un nombre aléatroirement parmi le tableau</button>
+  <p></p>
+  <h2>Vous avez choisi dans le tableau aléatoirement ce nombre : </h2>
+  <script>
+    let nombres = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+    let nombrePair = [];
+    let nombreImpair = [];
+    let multipleDeTrois = [];
+    let nombre_aleatoire = Math.random()*nombres.length;
+    let nombreEntierAleatoire= nombre_aleatoire % nombres.length
+
+    // À l'aide d'une boucle, copier chaque valeur de original dans copie
+    // afficher les deux tableaux
+    nombres.forEach(nombre =>{
+      if(nombre % 2 == 0){
+        nombrePair.push(nombre);    
+      }if (nombre % 2 == 1){
+        nombreImpair.push(nombre);    
+      }if (nombre % 3 == 0){
+        multipleDeTrois.push(nombre);    
+      }
+    });
+    let paragraphe = document.querySelector("p").innerHTML("Parmi ceux-ci voici les pairs qui sont donc les multiples de deux : "+nombrePair+" voici les impairs : "+nombreImpair+ " finalement, voici les multiple de trois : "+multipleDeTrois);
+    let monh1 = document.querySelector("h1").innerHTML("Nous avons cette liste de nombre : "+nombres);
+    let monh2 = document.querySelector("h2").innerHTML("Vous avez choisi dans le tableau aléatoirement ce nombre : ");
+
+  </script>
+</body>
