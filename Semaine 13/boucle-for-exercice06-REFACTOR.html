@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            height: 100vh;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        button {
+            max-width: 100px;
+        }
+
+        .r, .g, .b {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100px;
+            height: 35px;
+        }
+    </style>
+    <title>Carré couleur</title>
+</head>
+<body>
+    <h2>rgb(230, 120, 38)</h2>
+    <div 
+        id="boite"
+        style="background-color: rgb(35, 35, 35); width: 100px; height: 100px"
+        >
+    </div>
+
+    <div class="r">
+        <!-- <button class="moins"> - </button> -->
+        <h2>R</h2>
+        <button class="plus"> + </button>
+    </div>
+    <div class="g">
+        <!-- <button class="moins"> - </button> -->
+        <h2>G</h2>
+        <button class="plus"> + </button>
+    </div>
+    <div class="b">
+        <!-- <button class="moins"> - </button> -->
+        <h2>B</h2>
+        <button class="plus"> + </button>
+    </div>
+
+    <br>
+
+    <button id="btnRandom">Aleatoire</button>
+
+    <script>
+        let boite = document.querySelector("#boite");
+        let couleurActuelle = boite.style.backgroundColor;
+        let infoCouleur = document.querySelector("h2");
+        infoCouleur.textContent = couleurActuelle;
+        
+        let valeurs = couleurActuelle.match(/\d+/g);
+        
+        let r = Number(valeurs[0]);
+        let g = Number(valeurs[1]);
+        let b = Number(valeurs[2]);
+        
+        let bouttonR = document.querySelector(".r .plus");
+        let bouttonG = document.querySelector(".g .plus");
+        let bouttonB = document.querySelector(".b .plus");
+        // console.log(bouttonR);
+        switch (lettre) {
+            case "r": canal = r
+                
+                break;
+            case "g": canal = g
+                
+                break;
+            case "b": canal = b
+                
+                break;
+        
+            default:
+                break;
+        }
+
+        function changerCouleur (canal){
+            if( canal <= 255) {
+                canal = canal + 20;
+                if(canal >=256){
+                    canal = 255;
+                }
+            } else if (canal >= 256) {
+                canal = 255;
+            }
+            
+        }
+        bouttonR.addEventListener("click", function changerCouleur(r) {
+            infoCouleur.textContent = `rgb(${canal},${g},${b})`;
+            boite.style.backgroundColor = `rgb(${canal},${g},${b})`;
+        });
+        bouttonG.addEventListener("click", function changerCouleur(g) {
+           infoCouleur.textContent = `rgb(${r},${canal},${b})`;
+            boite.style.backgroundColor = `rgb(${r},${canal},${b})`;
+        });
+        bouttonB.addEventListener("click", function changerCouleur(b) {
+            infoCouleur.textContent = `rgb(${r},${g},${canal})`;
+            boite.style.backgroundColor = `rgb(${r},${g},${canal})`;
+        });
+
+
+
+
+
+    </script>
+</body>
+</html>

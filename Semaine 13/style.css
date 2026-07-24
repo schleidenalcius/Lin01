@@ -1,0 +1,103 @@
+body{
+    background-color: #dad7cd;
+}
+.boitier{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 20vh;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    background-color: #344e41;
+}
+h1{
+    font-size: 32px;
+    background-color: #dad7cd;
+    color:#588157;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10vw;
+    height: 4vh;
+}
+.boutons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+#action_nombre {
+    color:#dad7cd;
+    text-align: center;
+}
+
+.deuxiemeRange{
+    display: flex;
+    justify-content: space-between;
+}
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 30px;
+    background-color: #dda15e;
+}
+#nom{
+    border-radius: 30px;
+    width: 10vw;
+    height: 4vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btnFormulaire button{
+    width: 8vw;
+    color: #283618;
+    background-color: #fefae0 ;
+}
+.btnFormulaire {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+button{
+    width: 5vw;
+    height: 5vh;
+    border-radius: 30px;
+    font-size: 32px;
+}
+.palette{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.palette button{
+    border-top-width: 1vw;
+    border-bottom-width: 2vw;
+    height:2vh;
+}
+.tableau{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 30px;
+    background-color: #d4e4dc;
+}
+#brun {
+    border: 2px solid #283618;
+    background-color:#dda15e ;
+} 
+#jaune {
+    border: 2px solid #dda15e;
+    background-color:#fefae0 ;
+}
+#vert{ 
+    border: 2px solid #fefae0;
+    background-color:#283618 ;
+}
+       
