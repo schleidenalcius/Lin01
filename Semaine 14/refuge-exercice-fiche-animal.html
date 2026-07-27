@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Refuge, Fiche animal (exercice)</title>
+<style>
+  :root {
+    --color-bg: #f5f6fa;
+    --color-card: #ffffff;
+    --color-primary: #1d3557;
+    --color-accent: #457b9d;
+    --color-danger: #e63946;
+    --color-success: #2a9d8f;
+    --color-text: #2b2d42;
+    --color-border: #dcdde1;
+    --radius: 8px;
+    --spacing: 1rem;
+    background-color: var(--color-bg);
+  }
+body{
+  color:var(--color-text);
+}
+  /* À toi de continuer le style à partir d'ici si tu veux. */
+
+</style>
+</head>
+<body>
+
+<header>
+  <span id="nom-animal">Chargement...</span>
+  <span id="badge-adoption" class="badge">...</span>
+</header>
+
+<main>
+  <p>Type : <span id="type-animal">...</span></p>
+  <p>Couleur : <span id="couleur-animal">...</span></p>
+</main>
+
+<script>
+  // Donnée de départ, ne pas modifier
+  const animalVedette = {
+    nom: "Milo",
+    type: "Chien",
+    couleur: "Brun",
+    disponibleAdoption: true // true ou false
+  };
+  animaux = [
+  { nom: "Milo",    type: "Chien",      couleur: "Brun",          disponibleAdoption: true },
+  { nom: "Luna",    type: "Chat",       couleur: "Noir",          disponibleAdoption: false },
+  { nom: "Charlie", type: "Chien",      couleur: "Blanc",         disponibleAdoption: true },
+  { nom: "Bella",   type: "Lapin",      couleur: "Gris",          disponibleAdoption: true },
+  { nom: "Simba",   type: "Chat",       couleur: "Orange",        disponibleAdoption: false },
+  { nom: "Coco",    type: "Perroquet",  couleur: "Vert",          disponibleAdoption: true },
+  { nom: "Rex",     type: "Chien",      couleur: "Noir et blanc", disponibleAdoption: false },
+  { nom: "Pixel",   type: "Chat",       couleur: "Gris et blanc", disponibleAdoption: true }
+];
+  let nomDeAnimal = document.querySelector("#nom-animal");
+  let typeAnimal = document.querySelector("#type-animal");
+  let couleurAnimal = document.querySelector("#couleur-animal");
+  let badgeDeAnimal = document.querySelector("#badge-adoption");
+  
+  nomDeAnimal.textContent = `Mon nom est : ${animalVedette.nom}`;
+  typeAnimal.textContent = animalVedette.type;
+  couleurAnimal.textContent = animalVedette.couleur;
+  badgeDeAnimal.textContent = animalVedette.disponibleAdoption;
+  if (badgeDeAnimal.textContent){
+    badgeDeAnimal.textContent = "Disponible";
+  }else{
+    badgeDeAnimal.textContent = "Non-disponible";
+  }
+  const monZoo = document.createElement("ul");
+  document.body.appendChild(monZoo);
+  animaux.forEach(animal => {
+      let monAnimal = document.createElement("li");
+      if(animal.disponibleAdoption){
+        monAnimal.textContent = `Voici ${animal.nom}, il est un ${animal.type} de couleur ${animal.couleur} est disponible pour l'adoption`;
+      }else{
+        monAnimal.textContent = `Voici ${animal.nom}, il est un ${animal.type} de couleur ${animal.couleur} n'est pas disponible pour l'adoption`;
+
+      }
+      monZoo.appendChild(monAnimal);
+  });
+  // TODO 1 : sélectionne les 4 éléments qu'on doit remplir
+  //          (#nom-animal, #type-animal, #couleur-animal, #badge-adoption)
+
+  // TODO 2 : injecte le nom, le type et la couleur avec textContent
+
+  // TODO 3 : selon la valeur de disponibleAdoption, mets à jour le texte du badge
+  //          ("Disponible pour adoption" ou "Déjà adopté") et ajoute la bonne classe
+  //          CSS (badge-disponible ou badge-adopte) à l'élément du badge.
+  //          Indice : if (animalVedette.disponibleAdoption) { ... } else { ... }
+
+  // TODO 4 : dans le <style> plus haut, crée les classes .badge, .badge-disponible
+  //          (couleur qui inspire confiance, ex. var(--color-success)) et
+  //          .badge-adopte (couleur plus neutre ou grise, ex. var(--color-danger)
+  //          ou une couleur de ton choix), en t'inspirant du badge de statut vu
+  //          en classe.
+  /*;*/
+
+</script>
+
+</body>
+</html>
