@@ -1,0 +1,52 @@
+body {
+    box-sizing: border-box;
+}
+
+
+.listeElement {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+li {
+    box-sizing: border-box;
+    list-style-position: outside;
+    padding-left: 0;
+    list-style: circle;
+    list-style-type: none;
+    text-decoration: underline;
+}
+
+.btnsupprime {
+    box-sizing: border-box;
+}
+
+.btnSupprime:hover {
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+}
+
+input {
+    height: 40px;
+}
+
+ul {
+    box-sizing: border-box;
+    list-style: none;
+    padding-top: 40px;
+    padding-left: 0;
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 200px;
+    /* border: 2px solid rgb(89, 88, 88); */
+    color: rgb(40, 40, 40);
+}

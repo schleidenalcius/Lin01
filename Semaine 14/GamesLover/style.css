@@ -1,0 +1,23 @@
+:root{
+    --bgroundColor: #370617;
+    --txtColor: #faa307;
+    --bgTxtColor: #dc2f02;
+}
+
+body{
+    display: grid;
+    background-color: var(--bgroundColor);
+    color: var(--txtColor);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.carte{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ 
+}
+img{
+    width:300px;
+    border-radius: 20px;
+}

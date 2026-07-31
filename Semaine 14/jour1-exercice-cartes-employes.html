@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>ABM, Répertoire des employés (exercice jour 1)</title>
+<style>
+  :root {
+    --color-bg: #f5f6fa;
+    --color-card: #ffffff;
+    --color-primary: #1d3557;
+    --color-accent: #457b9d;
+    --color-danger: #e63946;
+    --color-success: #2a9d8f;
+    --color-warning: #e9a13b;
+    --color-text: #2b2d42;
+    --color-border: #dcdde1;
+    --radius: 8px;
+    --spacing: 1rem;
+  }
+
+  /* À toi de continuer le style à partir d'ici si tu veux.
+     Les variables ci-dessus sont déjà prêtes à être utilisées avec var(--nom-variable). */
+
+</style>
+</head>
+<body>
+
+<h1>Répertoire des employés, Atelier Boréal Médias</h1>
+
+<!-- Ta mission : générer une carte par employé À L'INTÉRIEUR de ce conteneur,
+     uniquement en JavaScript. Ne touche pas au HTML directement. -->
+<div id="conteneur-employes"></div>
+
+<script>
+  // Données de départ, ne pas modifier cette liste
+  const employes = [
+    { id: 1, prenom: "Jean", nom: "Dupont", departement: "Création et Production", statut: "actif", poste: "Graphiste" },
+    { id: 2, prenom: "Amélie", nom: "Tremblay", departement: "Produit et Technologie", statut: "conge", poste: "Développeuse" },
+    { id: 3, prenom: "Marc", nom: "Bouchard", departement: "Opérations et Support Client", statut: "actif", poste: "Agent support" },
+    { id: 4, prenom: "Sophie", nom: "Gagnon", departement: "Création et Production", statut: "absent", poste: "Monteuse vidéo" },
+    { id: 5, prenom: "Karim", nom: "Haddad", departement: "Produit et Technologie", statut: "actif", poste: "Chef de produit" },
+    { id: 6, prenom: "Julie", nom: "Roy", departement: "Opérations et Support Client", statut: "actif", poste: "Réceptionniste" }
+  ];
+
+  const conteneur = document.querySelector("#conteneur-employes");
+
+  // TODO 1 : pour chaque employé du tableau "employes", crée un élément (par exemple une <div>)
+  //          qui affiche son prénom, son nom, son département et son poste.
+
+  // TODO 2 : ajoute chaque carte créée à l'intérieur de "conteneur" avec appendChild.
+
+  // TODO 3 : donne à chaque carte une classe CSS différente selon le statut de l'employé
+  //          (actif, conge, absent), puis stylise ces classes dans le <style> plus haut
+  //          pour que ce soit visuellement clair.
+
+  // Indice : boucle avec employes.forEach(employe => { ... })
+
+</script>
+
+</body>
+</html>
